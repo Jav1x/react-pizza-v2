@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Docker Node.js Launch",
-            "type": "docker",
+            "type": "msedge",
             "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "platform": "node"
+            "name": "Run Edge",
+            "url": "http://localhost:4000",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
