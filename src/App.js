@@ -10,14 +10,14 @@ import "./scss/app.scss";
 import "./scss/app.scss";
 
 function App() {
-  const [ searchValue, setSearachValue ] = React.useState('');
+  const [searchValue, setSearachValue] = React.useState("");
 
   return (
     <div className="wrapper">
       <Header searchValue={searchValue} setSearachValue={setSearachValue} />
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home searchValue={searchValue} />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
